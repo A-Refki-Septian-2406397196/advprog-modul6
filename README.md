@@ -5,3 +5,7 @@ Di bagian ini, saya akhirnya paham kalau web server itu intinya cuma "mendengark
 ## Reflection 2
 
 Di tahap ini, web server buatan saya mulai terasa nyata karena akhirnya bisa menampilkan halaman HTML. Saya jadi paham kalau server harus mengirim response dengan format yang benar—seperti status_line dan Content-Length—supaya bisa dibaca browser. Ternyata, sekadar menampilkan satu halaman pun butuh struktur HTTP yang rapi. Saya juga belajar bagaimana file HTML dibaca dari proyek lalu dikirim sebagai body response. Intinya, hal-hal yang terlihat simpel di browser ternyata punya proses yang cukup detail di sisi server.
+
+## Reflection 3
+
+Di milestone ini, saya belajar kalau server harus bisa mengecek request untuk menentukan response yang pas, misalnya membedakan halaman utama dan 404. Di sinilah logika routing mulai terasa meski masih sederhana. Saya juga paham pentingnya refactoring supaya proses baca request dan penyusunan response lebih terpisah dan rapi. Intinya, menulis kode yang sekadar "jalan" itu belum cukup; struktur yang bagus sangat penting agar program tetap mudah dikembangkan saat makin besar.
