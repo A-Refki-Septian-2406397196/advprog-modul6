@@ -16,3 +16,4 @@ Di bagian ini, saya akhirnya melihat langsung kelemahan server single-threaded l
 
 ## Reflection 5
 
+Di tahap multithreaded, saya jadi paham bagaimana ThreadPool bikin server jauh lebih efisien. Alih-alih buat thread baru terus-menerus, server cukup pakai kumpulan thread yang sudah ada sehingga lebih hemat resource dan stabil. Saya juga belajar kalau concurrency itu soal pembagian tugas yang rapi ke para worker. Hasilnya, saat ada request lambat seperti /sleep, antrean lain tetap bisa diproses tanpa bikin server macet total. Milestone ini sukses bikin konsep concurrency jadi terasa jauh lebih nyata.
