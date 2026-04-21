@@ -9,3 +9,10 @@ Di tahap ini, web server buatan saya mulai terasa nyata karena akhirnya bisa men
 ## Reflection 3
 
 Di milestone ini, saya belajar kalau server harus bisa mengecek request untuk menentukan response yang pas, misalnya membedakan halaman utama dan 404. Di sinilah logika routing mulai terasa meski masih sederhana. Saya juga paham pentingnya refactoring supaya proses baca request dan penyusunan response lebih terpisah dan rapi. Intinya, menulis kode yang sekadar "jalan" itu belum cukup; struktur yang bagus sangat penting agar program tetap mudah dikembangkan saat makin besar.
+
+## Reflection 4
+
+Di bagian ini, saya akhirnya melihat langsung kelemahan server single-threaded lewat simulasi slow response. Begitu request /sleep jalan, semua antrean lain ikut tertahan karena satu thread cuma bisa memproses satu hal dalam satu waktu. Saya jadi paham bentuk nyata bottleneck yang selama ini cuma teori: kalau ada satu proses lambat, seluruh server jadi tidak responsif. Eksperimen ini penting banget karena memberi alasan logis kenapa kita butuh concurrency dalam membangun server yang andal.
+
+## Reflection 5
+
